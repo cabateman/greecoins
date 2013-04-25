@@ -1,0 +1,42 @@
+<form class="form-horizontal" name="sendCoinForm">
+	  <div class="control-group">
+	    <label class="control-label" for="recipientEmail">To:</label>
+	    <div class="controls">
+	      <input type="text" id="recipientEmail" placeholder="Recipient Email">
+	    </div>
+	  </div>
+	  <div class="control-group">
+	    <label class="control-label" for="recipientMessage">Message (optional!):</label>
+	    <div class="controls">
+	      <textarea rows="5" id="recipientMessage"></textarea>
+	    </div>
+	  </div>
+	  <div class="control-group">
+	    <label class="control-label" for="anonymousSender">Anonymous:</label>
+	    <div class="controls">
+		<div class="toggle toggle-off">
+		  <label class="toggle-radio" for="toggleOptionYes">YES</label>
+                  <input type="radio" name="toggleOptionsAnon" id="toggleOption1" value="option1" checked="checked">
+                  <label class="toggle-radio" for="toggleOptionNo">NO</label>
+                  <input type="radio" name="toggleOptionsAnon" id="toggleOption2" value="option2">
+
+                </div>
+	    </div>
+	    <label class="control-label" for="anonymousSender">Hide from Feed:</label>
+	    <div class="controls">
+		<div class="toggle">
+                  <label class="toggle-radio" for="toggleOptionYes">YES</label>
+                  <input type="radio" name="toggleOptionsFeed" id="toggleOption3" value="option3" checked="checked">
+                  <label class="toggle-radio" for="toggleOptionNo">NO</label>
+                  <input type="radio" name="toggleOptionsFeed" id="toggleOption4" value="option4">
+                </div>
+
+	    </div>
+
+	  </div>
+	  <div class="control-group">
+	    <div class="controls">
+              <a class="btn btn-large btn-success" href="#" id="sendCoin">Send Coin</a>
+	    </div>
+	  </div>
+	</form>
